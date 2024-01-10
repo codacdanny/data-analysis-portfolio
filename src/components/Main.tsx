@@ -115,7 +115,7 @@ const Main = () => {
             <Box textAlign="center">
               <Text>Data Interpretation</Text>
               <Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit odio.
+                Lorem ipsum dolor sit amet consectetur adipisicing odio.
               </Text>
             </Box>
           </Flex>
