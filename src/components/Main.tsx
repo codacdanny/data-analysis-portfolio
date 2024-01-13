@@ -60,9 +60,20 @@ const Main = () => {
               padding="2rem"
               border=".5px solid #6c63ff"
               borderRadius="50%"
+              marginBottom="1rem"
+              _hover={{
+                bgColor: "#6c63ff",
+                color: "white",
+              }}
             />
             <Box textAlign="center">
-              <Text>Data Management</Text>
+              <Text
+                fontSize="1.5rem"
+                fontWeight="500"
+                color="#6c63ff"
+                marginY=".6rem">
+                Data Management
+              </Text>
               <Text>
                 Data harvesting, cleaning and reshaping. Development of
                 automated workflows.
@@ -77,9 +88,20 @@ const Main = () => {
               padding="2rem"
               border=".5px solid #6c63ff"
               borderRadius="50%"
+              marginBottom="1rem"
+              _hover={{
+                bgColor: "#6c63ff",
+                color: "white",
+              }}
             />
             <Box textAlign="center">
-              <Text>Data Mining</Text>
+              <Text
+                fontSize="1.5rem"
+                fontWeight="500"
+                color="#6c63ff"
+                marginY=".6rem">
+                Data Mining
+              </Text>
               <Text>
                 Data exploration, application of statistical methods,
                 reproducible data analysis.
@@ -94,9 +116,20 @@ const Main = () => {
               padding="2rem"
               border=".5px solid #6c63ff"
               borderRadius="50%"
+              marginBottom="1rem"
+              _hover={{
+                bgColor: "#6c63ff",
+                color: "white",
+              }}
             />
             <Box textAlign="center">
-              <Text>Data Visualisation</Text>
+              <Text
+                fontSize="1.5rem"
+                fontWeight="500"
+                color="#6c63ff"
+                marginY=".6rem">
+                Data Visualisation
+              </Text>
               <Text>
                 Creation of static and interactive dataviz and dashboards,
                 review of scientific figures.
@@ -111,9 +144,20 @@ const Main = () => {
               padding="2rem"
               border=".5px solid #6c63ff"
               borderRadius="50%"
+              marginBottom="1rem"
+              _hover={{
+                bgColor: "#6c63ff",
+                color: "white",
+              }}
             />
             <Box textAlign="center">
-              <Text>Data Interpretation</Text>
+              <Text
+                fontSize="1.5rem"
+                fontWeight="500"
+                color="#6c63ff"
+                marginY=".6rem">
+                Data Interpretation
+              </Text>
               <Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing odio.
               </Text>
