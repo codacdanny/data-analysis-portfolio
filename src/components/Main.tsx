@@ -11,6 +11,7 @@ import {
 import headshot from "../assets/ikenna.jpg";
 import portfolio1 from "../assets/excel.png";
 import portfolio2 from "../assets/tableau.png";
+import portfolio3 from "../assets/power.jpg";
 import {
   BiBarChartAlt,
   BiSearch,
@@ -67,15 +68,19 @@ const PortfolioCard = ({ image, title }) => {
           </Box>
         )}
       </Box>
-      <Button
-        as="a"
-        href="#"
-        position="absolute"
-        bottom="1rem"
-        left="50%"
-        transform="translateX(-50%)">
-        View
-      </Button>
+      <Box textAlign="center">
+        <Button
+          marginY="2rem"
+          padding="1.5rem 4rem"
+          bgColor="#6c63ff"
+          color="white"
+          colorScheme="messenger"
+          borderRadius="9px"
+          as="a"
+          href="#">
+          View
+        </Button>
+      </Box>
     </Box>
   );
 };
@@ -84,7 +89,7 @@ const Main = () => {
   return (
     <Box>
       <Box padding="3rem">
-        <Box id="about" marginY="3rem">
+        <Box id="about" marginY="6rem">
           <Heading
             textAlign="center"
             my="2rem"
@@ -119,11 +124,8 @@ const Main = () => {
             </Box>
           </Flex>
         </Box>
-        <Flex marginY="10rem" gap="2rem" flexDirection="column">
-          <Heading
-            my="2rem"
-            textDecoration="underline #6c63ff"
-            textAlign="center">
+        <Flex marginY="6rem" gap="2rem" flexDirection="column">
+          <Heading marginY="3rem" textAlign="center">
             Services
           </Heading>
           <Flex>
@@ -240,39 +242,73 @@ const Main = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Box>
-          <Heading> Portfolio</Heading>
+        <Box marginY="6rem">
+          <Heading textAlign="center" marginY="3rem">
+            {" "}
+            Portfolio
+          </Heading>
           <Flex justifyContent="space-around">
             <PortfolioCard image={portfolio1} title="Portfolio 1" />
             <PortfolioCard image={portfolio2} title="Portfolio 2" />
+            <PortfolioCard image={portfolio3} title="Portfolio 3" />
           </Flex>
         </Box>
 
-        <Flex flexDirection="column">
-          <Heading> Contact Me</Heading>
-          <Text textAlign="justify">
+        <Flex
+          flexDirection="column"
+          marginY="6rem"
+          alignItems="center"
+          bgColor="#eee"
+          paddingY="3rem">
+          <Heading textAlign="center" marginY="3rem">
+            {" "}
+            Contact Me
+          </Heading>
+          <Text textAlign="center" width="60%" marginBottom="1rem">
             Feel free to contact me for any question. For open source projects,
             please open an issue or pull request on Github. If you want to
             follow my work, reach me on Twitter. Otherwise, send me an email at
             yan.holtz.data@gmail.com.
           </Text>
-          <Flex gap="1rem" justifyContent="center">
-            <Button>Github</Button>
-            <Button>LinkedIn</Button>
-            <Button>Mail</Button>
+          <Flex gap="3rem" justifyContent="center" marginY="2rem">
+            <Button
+              textColor="#6c63ff"
+              colorScheme="none"
+              bg="transparent"
+              padding="2rem"
+              outline="2px solid #6c63ff">
+              Github
+            </Button>
+            <Button
+              textColor="#6c63ff"
+              colorScheme="none"
+              bg="transparent"
+              padding="2rem"
+              outline="2px solid #6c63ff">
+              LinkedIn
+            </Button>
+            <Button
+              textColor="#6c63ff"
+              colorScheme="none"
+              bg="transparent"
+              padding="2rem"
+              outline="2px solid #6c63ff">
+              Mail
+            </Button>
           </Flex>
         </Flex>
       </Box>
       <Divider />
-      <Box
+      <Flex
+        flexDirection="column"
+        justifyContent="center"
         padding="4rem"
         color="#fff"
         bgColor="darkblue"
         fontWeight="200"
-        fontSize=".8rem"
-        textAlign="center">
+        fontSize=".8rem">
         &copy; Copyright 2024 Nwekwo Ikenna
-      </Box>
+      </Flex>
     </Box>
   );
 };

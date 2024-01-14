@@ -11,7 +11,14 @@ const Header = () => {
           <Text marginY="2rem">
             Welcome to Nwekwo's site. Lorem ipsum dolor sit amet consectetur,
           </Text>
-          <Button>Learn More</Button>
+          <Button
+            padding="1.5rem 4rem"
+            bgColor="#6c63ff"
+            color="white"
+            colorScheme="messenger"
+            borderRadius="9px">
+            Learn More
+          </Button>
         </Box>
         <Box>
           <Image
