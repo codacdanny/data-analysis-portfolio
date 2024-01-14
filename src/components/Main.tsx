@@ -20,7 +20,12 @@ import {
 } from "react-icons/bi";
 import { useState } from "react";
 
-const PortfolioCard = ({ image, title }) => {
+
+type PortfolioCardProps = {
+  image: string;
+  title: string;
+};
+const PortfolioCard = ({ image, title }: PortfolioCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
