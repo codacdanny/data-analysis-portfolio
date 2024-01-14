@@ -267,8 +267,8 @@ const Main = () => {
           <Text textAlign="center" width="60%" marginBottom="1rem">
             Feel free to contact me for any question. For open source projects,
             please open an issue or pull request on Github. If you want to
-            follow my work, reach me on Twitter. Otherwise, send me an email at
-            yan.holtz.data@gmail.com.
+            follow my work, reach me on Twitter. Otherwise, send me an email
+            below
           </Text>
           <Flex gap="3rem" justifyContent="center" marginY="2rem">
             <Button
