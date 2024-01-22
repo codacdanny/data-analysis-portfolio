@@ -16,7 +16,7 @@ const Nav = () => {
       padding="1rem 2rem"
       borderBottom=".5px solid #e0e0e0">
       <GridItem colSpan={2}>
-        <Heading>Analeyes</Heading>
+        <Heading>Analysis</Heading>
       </GridItem>
       <GridItem colSpan={2}>
         <List display="flex" gap="3rem">

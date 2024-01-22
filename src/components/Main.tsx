@@ -20,7 +20,6 @@ import {
 } from "react-icons/bi";
 import { useState } from "react";
 
-
 type PortfolioCardProps = {
   image: string;
   title: string;
@@ -94,7 +93,7 @@ const Main = () => {
   return (
     <Box>
       <Box padding="3rem">
-        <Box id="about" marginY="6rem">
+        <Box id="about">
           <Heading
             textAlign="center"
             my="2rem"

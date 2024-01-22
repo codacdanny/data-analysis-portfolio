@@ -5,11 +5,20 @@ const Header = () => {
   return (
     <Box height="100svh">
       <Nav />
-      <Flex alignItems="center" justifyContent="space-between" padding="3rem">
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        padding="3rem"
+        width="100%"
+        gap="4rem">
         <Box>
-          <Heading marginY="3rem">Data Analysis with Nwekwo</Heading>
-          <Text marginY="2rem">
-            Welcome to Nwekwo's site. Lorem ipsum dolor sit amet consectetur,
+          <Heading fontSize="3rem" fontWeight="700">
+            Elevate Your Data Experience with Nwekwo
+          </Heading>
+          <Text marginY="2rem" fontWeight="300" fontSize="1.2rem" width="85%">
+            Welcome to Nwekwo's world of data insights. Uncover meaningful
+            patterns, make informed decisions, <br /> and transform your data
+            into a strategic asset.
           </Text>
           <Button
             padding="1.5rem 4rem"
