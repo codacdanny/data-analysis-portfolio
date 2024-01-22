@@ -20,17 +20,17 @@ const Nav = () => {
       </GridItem>
       <GridItem colSpan={2}>
         <List display="flex" gap="3rem">
-          <Link>
+          <Link href="#about">
             <ListItem>About</ListItem>
           </Link>
-          <Link>
+          <Link href="#services">
             <ListItem>Services</ListItem>
           </Link>
 
-          <Link>
+          <Link href="#portfolio">
             <ListItem>Portfolio</ListItem>
           </Link>
-          <Link>
+          <Link href="#contact">
             <ListItem>Contact</ListItem>
           </Link>
         </List>

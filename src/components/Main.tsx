@@ -23,8 +23,9 @@ import { useState } from "react";
 type PortfolioCardProps = {
   image: string;
   title: string;
+  link: string;
 };
-const PortfolioCard = ({ image, title }: PortfolioCardProps) => {
+const PortfolioCard = ({ image, title, link }: PortfolioCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -59,6 +60,8 @@ const PortfolioCard = ({ image, title }: PortfolioCardProps) => {
         />
         {isHovered && (
           <Box
+            textAlign="center"
+            width="100%"
             position="absolute"
             top="50%"
             left="50%"
@@ -81,7 +84,7 @@ const PortfolioCard = ({ image, title }: PortfolioCardProps) => {
           colorScheme="messenger"
           borderRadius="9px"
           as="a"
-          href="#">
+          href={link}>
           View
         </Button>
       </Box>
@@ -117,18 +120,17 @@ const Main = () => {
                 color="white"
                 textAlign="justify"
                 height="fit-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae deleniti minima, delectus repudiandae modi autem eius
-                debitis totam similique laboriosam. Numquam harum, unde rem
-                quidem aliquid reprehenderit eveniet provident sint! deleniti
-                minima, delectus repudiandae modi autem eius debitis totam
-                similique laboriosam. Numquam harum, unde rem quidem aliquid
-                reprehenderit eveniet provident sint!
+                Hi, I'm Nwekwo, a skilled data analyst with expertise in
+                database querying, data cleaning and manipulation in SQL and
+                Excel, as well as creating meaningful insightful visualizations
+                and dashboards using Tableau and Power BI. Additionally, I
+                provide expertise in data interpretation and reporting to help
+                businesses make informed decisions based on their data.
               </Text>
             </Box>
           </Flex>
         </Box>
-        <Flex marginY="6rem" gap="2rem" flexDirection="column">
+        <Flex marginY="6rem" gap="2rem" flexDirection="column" id="services">
           <Heading marginY="3rem" textAlign="center">
             Services
           </Heading>
@@ -246,21 +248,33 @@ const Main = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Box marginY="6rem">
+        <Box marginY="8rem" id="portfolio">
           <Heading textAlign="center" marginY="3rem">
-            {" "}
             Portfolio
           </Heading>
           <Flex justifyContent="space-around">
-            <PortfolioCard image={portfolio1} title="Portfolio 1" />
-            <PortfolioCard image={portfolio2} title="Portfolio 2" />
-            <PortfolioCard image={portfolio3} title="Portfolio 3" />
+            <PortfolioCard
+              image={portfolio1}
+              title="Excel project"
+              link="https://1drv.ms/x/c/8c73a1f0d0911f82/EQ_-JiXmSR9Pu1BIPclRjVgB5yXYFIj4cFobmgIE7ZtfkA"
+            />
+            <PortfolioCard
+              image={portfolio2}
+              title="Tableau Project"
+              link="https://public.tableau.com/views/AirBnBProject_17010174849020/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+            />
+            <PortfolioCard
+              image={portfolio3}
+              title="PowerBI Project"
+              link="#"
+            />
           </Flex>
         </Box>
 
         <Flex
+          id="contact"
           flexDirection="column"
-          marginY="6rem"
+          marginY="3rem"
           alignItems="center"
           bgColor="#eee"
           paddingY="3rem">
@@ -269,34 +283,52 @@ const Main = () => {
             Contact Me
           </Heading>
           <Text textAlign="center" width="60%" marginBottom="1rem">
-            Feel free to contact me for any question. For open source projects,
-            please open an issue or pull request on Github. If you want to
-            follow my work, reach me on Twitter. Otherwise, send me an email
-            below
+            I'm excited to connect with you and discuss how we can collaborate
+            on data-driven projects. Whether you have questions, opportunities,
+            or just want to say hello, feel free to reach out through the
+            following channels:
           </Text>
           <Flex gap="3rem" justifyContent="center" marginY="2rem">
             <Button
+              as="a"
+              href="https://github.com/Ikenna001"
               textColor="#6c63ff"
               colorScheme="none"
               bg="transparent"
               padding="2rem"
-              outline="2px solid #6c63ff">
+              outline="2px solid #6c63ff"
+              _active={{
+                transform: "scale(1.1)",
+                transition: "all .2s",
+              }}>
               Github
             </Button>
             <Button
+              as="a"
+              href="http://linkedin.com/in/ikenna-nwekwo-416b9828b"
               textColor="#6c63ff"
               colorScheme="none"
               bg="transparent"
               padding="2rem"
-              outline="2px solid #6c63ff">
+              outline="2px solid #6c63ff"
+              _active={{
+                transform: "scale(1.1)",
+                transition: "all .2s",
+              }}>
               LinkedIn
             </Button>
             <Button
+              as="a"
+              href="mailto:ernestkenny17@gmail.com"
               textColor="#6c63ff"
               colorScheme="none"
               bg="transparent"
               padding="2rem"
-              outline="2px solid #6c63ff">
+              outline="2px solid #6c63ff"
+              _active={{
+                transform: "scale(1.1)",
+                transition: "all .2s",
+              }}>
               Mail
             </Button>
           </Flex>
@@ -304,14 +336,15 @@ const Main = () => {
       </Box>
       <Divider />
       <Flex
-        flexDirection="column"
+        id="footer"
+        alignItems="flex-end"
         justifyContent="center"
-        padding="4rem"
+        padding="2rem"
         color="#fff"
         bgColor="darkblue"
         fontWeight="200"
         fontSize=".8rem">
-        &copy; Copyright 2024 Nwekwo Ikenna
+        <Text marginTop="auto">&copy; Copyright 2024 Nwekwo Ikenna</Text>
       </Flex>
     </Box>
   );

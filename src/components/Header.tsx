@@ -6,21 +6,28 @@ const Header = () => {
     <Box height="100svh">
       <Nav />
       <Flex
+        flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
         justifyContent="space-between"
-        padding="3rem"
-        width="100%"
-        gap="4rem">
+        padding={{ base: "2rem", md: "3rem" }}
+        gap="4rem"
+        width="100%">
         <Box>
-          <Heading fontSize="3rem" fontWeight="700">
-            Elevate Your Data Experience with Nwekwo
+          <Heading fontSize={{ base: "2rem", md: "3rem" }} fontWeight="700">
+            Elevate Your Data Experience with Ikenna
           </Heading>
-          <Text marginY="2rem" fontWeight="300" fontSize="1.2rem" width="85%">
-            Welcome to Nwekwo's world of data insights. Uncover meaningful
+          <Text
+            marginY="1rem"
+            fontWeight="300"
+            fontSize={{ base: "1rem", md: "1.2rem" }}
+            width={{ base: "100%", md: "85%" }}>
+            Welcome to Ikenna's world of data insights. Uncover meaningful
             patterns, make informed decisions, <br /> and transform your data
             into a strategic asset.
           </Text>
           <Button
+            as="a"
+            href="#portfolio"
             padding="1.5rem 4rem"
             bgColor="#6c63ff"
             color="white"
