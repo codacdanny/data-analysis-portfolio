@@ -8,7 +8,10 @@ const Header = () => {
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent={{
+          base: "center",
+          xl: "space-between",
+        }}
         padding={{ base: "2rem", md: "3rem" }}
         gap="4rem"
         width="100%">
@@ -28,15 +31,15 @@ const Header = () => {
           <Button
             as="a"
             href="#portfolio"
-            padding="1.5rem 4rem"
+            padding={{ base: "1rem 2rem", md: "1.5rem 4rem" }}
             bgColor="#6c63ff"
             color="white"
-            colorScheme="messenger"
-            borderRadius="9px">
+            borderRadius="9px"
+            marginTop={{ base: "1rem", md: 0 }}>
             Learn More
           </Button>
         </Box>
-        <Box>
+        <Box display={{ base: "none", xl: "block" }}>
           <Image
             src={hero}
             boxSize="fit-content"

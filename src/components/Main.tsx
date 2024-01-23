@@ -120,7 +120,7 @@ const Main = () => {
                 color="white"
                 textAlign="justify"
                 height="fit-content">
-                Hi, I'm Nwekwo, a skilled data analyst with expertise in
+                Hi, I'm Ikenna, a skilled data analyst with expertise in
                 database querying, data cleaning and manipulation in SQL and
                 Excel, as well as creating meaningful insightful visualizations
                 and dashboards using Tableau and Power BI. Additionally, I
@@ -266,7 +266,7 @@ const Main = () => {
             <PortfolioCard
               image={portfolio3}
               title="PowerBI Project"
-              link="#"
+              link="https://github.com/Ikenna001/PortfolioProject.git"
             />
           </Flex>
         </Box>
