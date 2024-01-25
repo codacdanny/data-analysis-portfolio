@@ -1,11 +1,13 @@
 import {
-  Box,
+
   Grid,
   GridItem,
   Heading,
   Link,
   List,
   ListItem,
+  Menu,
+  MenuList,
 } from "@chakra-ui/react";
 
 const Nav = () => {
@@ -35,7 +37,9 @@ const Nav = () => {
           </Link>
         </List>
       </GridItem>
-      <Box />
+      <Menu>
+        <MenuList></MenuList>
+      </Menu>
     </Grid>
   );
 };
