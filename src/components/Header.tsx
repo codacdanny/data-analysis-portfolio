@@ -3,7 +3,7 @@ import hero from "../assets/header.svg";
 import Nav from "./Nav";
 const Header = () => {
   return (
-    <Box height="100svh">
+    <Box height={{ base: "100%", xl: "100svh" }}>
       <Nav />
       <Flex
         flexDirection={{ base: "column", md: "row" }}
