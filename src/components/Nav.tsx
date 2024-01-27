@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Grid,
   GridItem,
@@ -81,50 +80,30 @@ const Nav = () => {
               flexDir="column"
               gap="1rem">
               <MenuItem>
-                <Button
-                  as="a"
-                  href="#about"
-                  textColor="#000"
-                  fontWeight="400"
-                  variant="link">
-                  About Us
-                </Button>
+                <Link href="#about">
+                  <ListItem>About Us</ListItem>
+                </Link>
               </MenuItem>
               <MenuItem>
-                <Button
-                  as="a"
-                  href="#services"
-                  variant="link"
-                  textColor="#000"
-                  fontWeight="400">
-                  Services
-                </Button>
+                <Link href="#services">
+                  <ListItem>Services</ListItem>
+                </Link>
               </MenuItem>
 
               <MenuItem>
-                <Button
-                  as="a"
-                  href="#portfolio"
-                  variant="link"
-                  textColor="#000"
-                  fontWeight="400">
-                  Portfolio
-                </Button>
+                <Link href="#portfolio">
+                  <ListItem>Portfolio</ListItem>
+                </Link>
               </MenuItem>
               <MenuItem>
-                <Button
-                  as="a"
-                  href="#pcontact"
-                  textColor="#000"
-                  fontWeight="400"
-                  variant="link">
-                  Contact
-                </Button>
+                <Link href="#contact">
+                  <ListItem>Contact</ListItem>
+                </Link>
               </MenuItem>
             </MenuList>
           </Menu>
         </GridItem>
-      </Grid>{" "}
+      </Grid>
     </Flex>
   );
 };
