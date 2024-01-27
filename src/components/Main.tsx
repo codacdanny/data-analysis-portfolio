@@ -166,7 +166,6 @@ const Main = () => {
               base: "column",
               lg: "row",
             }}
-            wrap="wrap"
             gap={{
               base: "2rem",
               xl: ".3rem",

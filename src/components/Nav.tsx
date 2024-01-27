@@ -33,7 +33,10 @@ const Nav = () => {
           </Heading>
         </GridItem>
         <GridItem
-          colSpan={2}
+          colSpan={{
+            base: 2,
+            lg: 1,
+          }}
           visibility={{
             base: "hidden",
             lg: "visible",
@@ -55,7 +58,10 @@ const Nav = () => {
           </List>
         </GridItem>
         <GridItem
-          colSpan={1}
+          colSpan={{
+            base: 0,
+            lg: 1,
+          }}
           display={{
             base: "grid",
             lg: "none",
