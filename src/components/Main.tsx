@@ -104,10 +104,7 @@ const Main = () => {
         <Box id="about">
           <Heading
             textAlign="center"
-            my={{
-              base: "1rem",
-              xl: "2rem",
-            }}
+            my="3rem"
             textDecoration="underline #6c63ff">
             About
           </Heading>
@@ -330,13 +327,20 @@ const Main = () => {
             {" "}
             Contact Me
           </Heading>
-          <Text textAlign="center" width="60%" marginBottom="1rem">
+          <Text
+            textAlign="center"
+            width={{
+              base: "100%",
+              lg: "80%",
+              xl: "60%",
+            }}
+            marginBottom="1rem">
             I'm excited to connect with you and discuss how we can collaborate
             on data-driven projects. Whether you have questions, opportunities,
             or just want to say hello, feel free to reach out through the
             following channels:
           </Text>
-          <Flex gap="3rem" justifyContent="center" marginY="2rem">
+          <Flex gap="3rem" justifyContent="center" marginY="2rem" wrap="wrap">
             <Button
               as="a"
               href="https://github.com/Ikenna001"
