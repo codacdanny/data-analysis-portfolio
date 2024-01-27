@@ -95,15 +95,39 @@ const PortfolioCard = ({ image, title, link }: PortfolioCardProps) => {
 const Main = () => {
   return (
     <Box>
-      <Box padding="3rem">
+      <Box
+        padding={{
+          base: "1rem",
+          lg: "2rem",
+          xl: "3rem",
+        }}>
         <Box id="about">
           <Heading
             textAlign="center"
-            my="2rem"
+            my={{
+              base: "1rem",
+              xl: "2rem",
+            }}
             textDecoration="underline #6c63ff">
             About
           </Heading>
-          <Flex justifyContent="space-around" width="100%" paddingX="3rem">
+          <Flex
+            flexDirection={{
+              base: "column",
+              lg: "row",
+            }}
+            gap="2rem"
+            justifyContent="space-around"
+            alignItems={{
+              base: "center",
+              lg: "space-around",
+            }}
+            width="100%"
+            paddingX={{
+              base: "0rem",
+              lg: "2rem",
+              xl: "3rem",
+            }}>
             <Box maxWidth="14rem">
               <Image
                 src={headshot}
@@ -114,7 +138,13 @@ const Main = () => {
                 borderRadius="12px"
               />
             </Box>
-            <Box bgColor="#6c63ff" width="60%" borderRadius="12px">
+            <Box
+              bgColor="#6c63ff"
+              width={{
+                base: "100%",
+                xl: "60%",
+              }}
+              borderRadius="12px">
               <Text
                 padding="3rem 2rem"
                 color="white"
@@ -134,7 +164,20 @@ const Main = () => {
           <Heading marginY="3rem" textAlign="center">
             Services
           </Heading>
-          <Flex>
+          <Flex
+            flexDirection={{
+              base: "column",
+              lg: "row",
+            }}
+            wrap="wrap"
+            gap={{
+              base: "2rem",
+              xl: ".3rem",
+            }}
+            justifyContent={{
+              base: "center",
+              xl: "unset",
+            }}>
             <Flex flexDirection="column" alignItems="center">
               <Icon
                 as={BiWrench}
@@ -248,11 +291,16 @@ const Main = () => {
             </Flex>
           </Flex>
         </Flex>
-        <Box marginY="8rem" id="portfolio">
+        <Box
+          marginY="8rem"
+          id="portfolio"
+          paddingX={{
+            base: "2rem",
+          }}>
           <Heading textAlign="center" marginY="3rem">
             Portfolio
           </Heading>
-          <Flex justifyContent="space-around">
+          <Flex justifyContent="space-around" wrap="wrap" gap="2rem">
             <PortfolioCard
               image={portfolio1}
               title="Excel project"
