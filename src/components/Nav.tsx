@@ -79,27 +79,19 @@ const Nav = () => {
               display="flex"
               flexDir="column"
               gap="1rem">
-              <MenuItem>
-                <Link href="#about">
-                  <ListItem>About Us</ListItem>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link href="#services">
-                  <ListItem>Services</ListItem>
-                </Link>
-              </MenuItem>
+              <Link href="#about">
+                <MenuItem>About Us</MenuItem>
+              </Link>
 
-              <MenuItem>
-                <Link href="#portfolio">
-                  <ListItem>Portfolio</ListItem>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link href="#contact">
-                  <ListItem>Contact</ListItem>
-                </Link>
-              </MenuItem>
+              <Link href="#services">
+                <MenuItem>Services</MenuItem>
+              </Link>
+              <Link href="#portfolio">
+                <MenuItem>Portfolio</MenuItem>
+              </Link>
+              <Link href="#contact">
+                <MenuItem>Contact </MenuItem>
+              </Link>
             </MenuList>
           </Menu>
         </GridItem>
